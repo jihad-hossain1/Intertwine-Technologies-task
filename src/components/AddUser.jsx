@@ -10,13 +10,14 @@ const basicData = {
   email: "",
   phone: "",
   img: "",
+  age: 0,
 };
 
 const AddUser = () => {
   const [open, setOpen] = useState(false);
   const [user, setUser] = useState(basicData);
 
-  const { name, user_name, email, phone, img } = user;
+  const { name, user_name, email, phone, img, age } = user;
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -91,6 +92,14 @@ const AddUser = () => {
               value={img}
               onChange={handleChange}
               name="img"
+            />
+            <label htmlFor="">Age </label>
+            <TextField
+              className="bg-zinc-50 text-zinc-700 "
+              type="number"
+              value={age}
+              onChange={handleChange}
+              name="age"
             />
             <button
               className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-medium px-4 py-2 rounded hover:opacity-90 transition-opacity"

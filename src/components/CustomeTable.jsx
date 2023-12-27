@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -15,11 +15,10 @@ import FirstPageIcon from "@mui/icons-material/FirstPage";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import LastPageIcon from "@mui/icons-material/LastPage";
-import { getAllUsers } from "../utils/fetchUsers";
 import DeleteUser from "./DeleteUser";
-import { Avatar, TableHead, TextField } from "@mui/material";
+import { Avatar, Radio, TableHead, TextField } from "@mui/material";
 import AddUser from "./AddUser";
-import { filterReducer } from "../utils/reducer";
+import { UserState } from "../context/Context";
 
 function TablePaginationActions(props) {
   const theme = useTheme();
@@ -82,7 +81,6 @@ function TablePaginationActions(props) {
     </Box>
   );
 }
-
 TablePaginationActions.propTypes = {
   count: PropTypes.number.isRequired,
   onPageChange: PropTypes.func.isRequired,
@@ -91,25 +89,32 @@ TablePaginationActions.propTypes = {
 };
 
 const CustomeTable = () => {
-  const [users, setUsers] = useState([]);
+  // filter users
+  const {
+    users,
+    filterState: { searchQuery, sort },
+    filterDispatch,
+  } = UserState();
 
-  const _is = async () => {
-    let data = await getAllUsers();
-    // console.log(data);
-    setUsers(data);
+  const transformUsers = () => {
+    let sortedUsers = users;
+    if (sort) {
+      sortedUsers = sortedUsers.sort((a, b) =>
+        sort === "lowToHigh" ? a.age - b.age : b.age - a.age
+      );
+    }
+
+    if (searchQuery) {
+      sortedUsers = sortedUsers.filter((itm) =>
+        itm.name.toLowerCase().includes(searchQuery)
+      );
+    }
+    return sortedUsers;
   };
 
-  useEffect(() => {
-    _is();
-  }, []);
-
+  // pagination users
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
-
-  const [filterState, filterDispatch] = useReducer(filterReducer, {
-    name: "",
-    searchQuery: "",
-  });
 
   const emptyRows =
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - users.length) : 0;
@@ -131,13 +136,50 @@ const CustomeTable = () => {
         <AddUser />
       </main>
       <section className="mt-10">
-        <div className="bg-zinc-50 p-3">
+        <div className="bg-zinc-50 p-3 flex items-center justify-between">
           <TextField
             id="outlined-basic"
             type="search"
             label="Search"
             variant="outlined"
+            onChange={(e) => {
+              filterDispatch({
+                type: "FILTER_BY_SEARCH",
+                payload: e.target.value,
+              });
+            }}
           />
+          <div className=" flex text-zinc-700 items-center">
+            <h4 className="w-fit border-b border-violet-600 font-semibold text-sm mr-2">
+              Sort By Age:
+            </h4>
+            <Radio
+              onChange={() =>
+                filterDispatch({
+                  type: "SORT_BY_AGE",
+                  payload: "lowToHigh",
+                })
+              }
+              checked={sort == "lowToHigh" ? true : false}
+              type="radio"
+              name="ascending"
+              id=""
+            />
+            <label htmlFor="ascending">Ascending</label>
+            <Radio
+              onChange={() =>
+                filterDispatch({
+                  type: "SORT_BY_AGE",
+                  payload: "highToLow",
+                })
+              }
+              checked={sort == "highToLow" ? true : false}
+              type="radio"
+              name="descending"
+              id=""
+            />
+            <label htmlFor="descending">Descending</label>
+          </div>
         </div>
         <TableContainer component={Paper}>
           <Table
@@ -151,16 +193,17 @@ const CustomeTable = () => {
                 <TableCell align="right">Email</TableCell>
                 <TableCell align="right">Phone</TableCell>
                 <TableCell align="right">User Name</TableCell>
+                <TableCell align="right">User Age</TableCell>
                 <TableCell align="right">Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {(rowsPerPage > 0
-                ? users.slice(
+                ? transformUsers().slice(
                     page * rowsPerPage,
                     page * rowsPerPage + rowsPerPage
                   )
-                : users
+                : transformUsers()
               ).map((row) => (
                 <TableRow
                   key={row.id}
@@ -175,8 +218,9 @@ const CustomeTable = () => {
                   <TableCell align="right">{row?.email}</TableCell>
                   <TableCell align="right">{row?.phone}</TableCell>
                   <TableCell align="right">{row?.user_name}</TableCell>
+                  <TableCell align="right">{row?.age}</TableCell>
                   <TableCell align="right">
-                    <DeleteUser getUsers={_is} uid={row?.id} />
+                    <DeleteUser uid={row?.id} />
                   </TableCell>
                 </TableRow>
               ))}

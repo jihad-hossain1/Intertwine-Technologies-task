@@ -1,116 +1,22 @@
 {
   "users": [
     {
-      "id": 621,
-      "name": "john doe",
-      "user_name": "json1",
-      "email": "one@gmail.com",
-      "img": "https://i.ibb.co/Z2Zj7LC/another.webp",
-      "phone": "434 2345 2345"
-    },
-    {
-      "id": 21,
-      "name": "usman ali",
-      "user_name": "json2",
-      "email": "two@gmail.com",
-      "img": "https://i.ibb.co/JcLSvDk/tropical-3.webp",
-      "phone": "434 2345 2345"
-    },
-    {
-      "id": 1234,
-      "name": "mst rubi",
-      "user_name": "json3",
-      "email": "two@gmail.com",
-      "img": "https://i.ibb.co/2jn5RL6/tropical-1.webp",
-      "phone": "434 2345 2345"
-    },
-    {
-      "name": "md jihad hossain",
-      "user_name": "asdf",
-      "email": "jihadkhan934@gmail.com",
-      "phone": "+8801779334696",
-      "img": "agsdgasd",
-      "id": 1235
-    },
-    {
-      "name": "md jihad hossain",
-      "user_name": "fasdf",
-      "email": "jihadkhan934@gmail.com",
-      "phone": "+8801779334696",
-      "img": "asdfadsf",
-      "id": 1236
-    },
-    {
-      "name": "gasdgas",
-      "user_name": "agasdg",
-      "email": "jihadkadhan934@gmail.com",
-      "phone": "+880177934434696",
-      "img": "asdf",
-      "id": 13237
-    },
-    {
-      "id": 6213,
-      "name": "john doe",
-      "user_name": "json1",
-      "email": "one@gmail.com",
-      "img": "https://i.ibb.co/Z2Zj7LC/another.webp",
-      "phone": "434 2345 2345"
-    },
-    {
-      "id": 2661,
-      "name": "usman ali",
-      "user_name": "json2",
-      "email": "two@gmail.com",
-      "img": "https://i.ibb.co/JcLSvDk/tropical-3.webp",
-      "phone": "434 2345 2345"
-    },
-    {
-      "id": 13234,
-      "name": "mst rubi",
-      "user_name": "json3",
-      "email": "two@gmail.com",
-      "img": "https://i.ibb.co/2jn5RL6/tropical-1.webp",
-      "phone": "434 2345 2345"
-    },
-    {
-      "name": "md jihad hossain",
-      "user_name": "asdf",
-      "email": "jihadkhan934@gmail.com",
-      "phone": "+8801779334696",
-      "img": "agsdgasd",
-      "id": 12735
-    },
-    {
-      "name": "md jihad hossain",
-      "user_name": "fasdf",
-      "email": "jihadkhan934@gmail.com",
-      "phone": "+8801779334696",
-      "img": "asdfadsf",
-      "id": 12356
-    },
-    {
-      "name": "md jihad hossain",
+      "name": "ewr",
       "user_name": "asdf 2",
       "email": "jihadkhan934@gmail.com",
       "phone": "+8801779334696",
-      "img": "asdfasdf",
-      "id": 13238
+      "img": "asdfadsf",
+      "age": "25",
+      "id": 2
     },
     {
-      "name": "asdfads",
-      "user_name": "asdfadsf",
-      "email": "asdfasdf@gmail.com",
-      "phone": "asdggafg",
-      "img": "asdgasfdg",
-      "id": 13239
-    },
-    {
-      "name": "md jihad hossain",
-      "user_name": "fasdf",
-      "email": "jihadkhan934@gmail.com",
-      "phone": "+8801779334696",
+      "name": "sorif",
+      "user_name": "sori_uddin",
+      "email": "sorif@gmao.com",
+      "phone": "2435 2345 2345",
       "img": "agsdgasd",
-      "id": 13240
+      "age": "32",
+      "id": 3
     }
   ]
 }
