@@ -1,0 +1,348 @@
+[{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada8a"
+  },
+  "Code": "nvklal433",
+  "Name": "Black Watch",
+  "Image": "black-watch.jpg",
+  "Price": 72,
+  "Category": "Accessories",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada8b"
+  },
+  "Code": "zz21cz3c1",
+  "Name": "Blue Band",
+  "Image": "blue-band.jpg",
+  "Price": 79,
+  "Category": "Fitness",
+  "Reviews": 3,
+  "Status": "LOWSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada8c"
+  },
+  "Code": "244wgerg2",
+  "Name": "Blue T-Shirt",
+  "Image": "blue-t-shirt.jpg",
+  "Price": 29,
+  "Category": "Clothing",
+  "Reviews": 5,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada8d"
+  },
+  "Code": "h456wer53",
+  "Name": "Bracelet",
+  "Image": "bracelet.jpg",
+  "Price": 15,
+  "Category": "Accessories",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada8e"
+  },
+  "Code": "av2231fwg",
+  "Name": "Brown Purse",
+  "Image": "brown-purse.jpg",
+  "Price": 120,
+  "Category": "Accessories",
+  "Reviews": 4,
+  "Status": "OUTOFSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada8f"
+  },
+  "Code": "bib36pfvm",
+  "Name": "Chakra Bracelet",
+  "Image": "chakra-bracelet.jpg",
+  "Price": 32,
+  "Category": "Accessories",
+  "Reviews": 3,
+  "Status": "LOWSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada90"
+  },
+  "Code": "mbvjkgip5",
+  "Name": "Galaxy Earrings",
+  "Image": "galaxy-earrings.jpg",
+  "Price": 34,
+  "Category": "Accessories",
+  "Reviews": 5,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada91"
+  },
+  "Code": "vbb124btr",
+  "Name": "Game Controller",
+  "Image": "game-controller.jpg",
+  "Price": 99,
+  "Category": "Electronics",
+  "Reviews": 4,
+  "Status": "LOWSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada92"
+  },
+  "Code": "cm230f032",
+  "Name": "Gaming Set",
+  "Image": "gaming-set.jpg",
+  "Price": 299,
+  "Category": "Electronics",
+  "Reviews": 3,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada93"
+  },
+  "Code": "plb34234v",
+  "Name": "Gold Phone Case",
+  "Image": "gold-phone-case.jpg",
+  "Price": 24,
+  "Category": "Accessories",
+  "Reviews": 4,
+  "Status": "OUTOFSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada94"
+  },
+  "Code": "4920nnc2d",
+  "Name": "Green Earbuds",
+  "Image": "green-earbuds.jpg",
+  "Price": 89,
+  "Category": "Electronics",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada95"
+  },
+  "Code": "250vm23cc",
+  "Name": "Green T-Shirt",
+  "Image": "green-t-shirt.jpg",
+  "Price": 49,
+  "Category": "Clothing",
+  "Reviews": 5,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada96"
+  },
+  "Code": "fldsmn31b",
+  "Name": "Grey T-Shirt",
+  "Image": "grey-t-shirt.jpg",
+  "Price": 48,
+  "Category": "Clothing",
+  "Reviews": 3,
+  "Status": "OUTOFSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada97"
+  },
+  "Code": "waas1x2as",
+  "Name": "Headphones",
+  "Image": "headphones.jpg",
+  "Price": 175,
+  "Category": "Electronics",
+  "Reviews": 5,
+  "Status": "LOWSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada98"
+  },
+  "Code": "vb34btbg5",
+  "Name": "Light Green T-Shirt",
+  "Image": "light-green-t-shirt.jpg",
+  "Price": 49,
+  "Category": "Clothing",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada99"
+  },
+  "Code": "k8l6j58jl",
+  "Name": "Lime Band",
+  "Image": "lime-band.jpg",
+  "Price": 79,
+  "Category": "Fitness",
+  "Reviews": 3,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada9a"
+  },
+  "Code": "v435nn85n",
+  "Name": "Mini Speakers",
+  "Image": "mini-speakers.jpg",
+  "Price": 85,
+  "Category": "Clothing",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada9b"
+  },
+  "Code": "09zx9c0zc",
+  "Name": "Painted Phone Case",
+  "Image": "painted-phone-case.jpg",
+  "Price": 56,
+  "Category": "Accessories",
+  "Reviews": 5,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada9c"
+  },
+  "Code": "mnb5mb2m5",
+  "Name": "Pink Band",
+  "Image": "pink-band.jpg",
+  "Price": 79,
+  "Category": "Fitness",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada9d"
+  },
+  "Code": "r23fwf2w3",
+  "Name": "Pink Purse",
+  "Image": "pink-purse.jpg",
+  "Price": 110,
+  "Category": "Accessories",
+  "Reviews": 4,
+  "Status": "OUTOFSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada9e"
+  },
+  "Code": "pxpzczo23",
+  "Name": "Purple Band",
+  "Image": "purple-band.jpg",
+  "Price": 79,
+  "Category": "Fitness",
+  "Reviews": 3,
+  "Status": "LOWSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafada9f"
+  },
+  "Code": "2c42cb5cb",
+  "Name": "Purple Gemstone Necklace",
+  "Image": "purple-gemstone-necklace.jpg",
+  "Price": 45,
+  "Category": "Accessories",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafadaa0"
+  },
+  "Code": "5k43kkk23",
+  "Name": "Purple T-Shirt",
+  "Image": "purple-t-shirt.jpg",
+  "Price": 49,
+  "Category": "Clothing",
+  "Reviews": 5,
+  "Status": "LOWSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafadaa1"
+  },
+  "Code": "lm2tny2k4",
+  "Name": "Shoes",
+  "Image": "shoes.jpg",
+  "Price": 64,
+  "Category": "Clothing",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafadaa2"
+  },
+  "Code": "nbm5mv45n",
+  "Name": "Sneakers",
+  "Image": "sneakers.jpg",
+  "Price": 78,
+  "Category": "Clothing",
+  "Reviews": 4,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafadaa3"
+  },
+  "Code": "zx23zc42c",
+  "Name": "Teal T-Shirt",
+  "Image": "teal-t-shirt.jpg",
+  "Price": 49,
+  "Category": "Clothing",
+  "Reviews": 3,
+  "Status": "LOWSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafadaa4"
+  },
+  "Code": "acvx872gc",
+  "Name": "Yellow Earbuds",
+  "Image": "yellow-earbuds.jpg",
+  "Price": 89,
+  "Category": "Electronics",
+  "Reviews": 3,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafadaa5"
+  },
+  "Code": "tx125ck42",
+  "Name": "Yoga Mat",
+  "Image": "yoga-mat.jpg",
+  "Price": 20,
+  "Category": "Fitness",
+  "Reviews": 5,
+  "Status": "INSTOCK"
+},
+{
+  "_id": {
+    "$oid": "658b0050eb3074eacafadaa6"
+  },
+  "Code": "gwuby345v",
+  "Name": "Yoga Set",
+  "Image": "yoga-set.jpg",
+  "Price": 20,
+  "Category": "Fitness",
+  "Reviews": 8,
+  "Status": "INSTOCK"
+}]
